@@ -1,0 +1,129 @@
+
+@import "null.css";
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600&display=swap);
+
+body {
+	color: rgb(70, 66, 66);
+	font-family: "Poppins";
+	font-style: normal;
+	background-color: aqua;
+	
+}
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.form {
+	width: 100%;
+    position: absolute;  
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60px;
+    transition: max-width 0.3s ease;
+}
+.form._active {
+    max-width: 999px;
+}
+
+.form__search {
+	width: 100%;
+    height: 54px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 10px 50px 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: relative;
+    outline: 1px solid rgb(119, 119, 119);
+    color:  rgb(117, 117, 117);
+}
+.form__search._active {
+    opacity: 1;
+}
+.form__counter {
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	color: rgb(154, 7, 7);
+	position: absolute;
+	margin-left: 15px;
+	bottom: -30px;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	}
+	
+	.form__counter._active {
+		opacity: 1;
+	}
+
+.form__button {
+	position: relative;
+	/*position: absolute;*/
+    right: 0;
+    background-color: rgb(111, 145, 96);
+    color: #fff;
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.form__button:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form__button._active {
+    right: 10px;
+    background-color: #fff;
+    color: rgb(111, 145, 96);
+    cursor: default;
+}
+
+.form__button._active:hover{
+    box-shadow: none;
+}
+
+.form__icon{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	background: url('../img/search.png') center / 30px no-repeat, rgb(236, 153, 19);
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+.yes{
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	background-color: azure;
+	border-radius: 50%;
+	padding: 10px;
+	color: rgb(154, 7, 7);
+	position: absolute;  
+    display: flex;
+    align-items: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+
+
+
+
+
